@@ -33,10 +33,12 @@ namespace ConsoleAppFizzBuzzGame
                 var number = Console.ReadLine();
                 if (number.ToLower() == "q")
                 {
+                    Console.WriteLine();
                     Console.WriteLine("Czy chcesz wcześniej poznać rozwiązanie? [tak/nie]");
                 }
                else if (number.ToLower() == "tak")
                 {
+                    Console.WriteLine();
                     Console.WriteLine("W grze podajesz dowolną liczbę.");
                     Console.WriteLine("Jeżeli liczba będzie podzielna przez 3, otrzymasz komunikat 'Fizz'.");
                     Console.WriteLine("Jeżeli liczba będzie podzielna przez 5, otrzymasz komunikat 'Buzz'.");
