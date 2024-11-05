@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppFizzBuzzGame
 {
-    class FizzBuzz
+    public class FizzBuzz
     {
         public string CheckNumber(int number)
         {
