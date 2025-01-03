@@ -23,5 +23,44 @@ namespace ConsoleAppFizzBuzzGame.UnitTests
             Assert.That(result, Is.EqualTo("Fizz"));
 
         }
+
+        [Test]
+        public void CheckNumber_WhenInputIsDivisibleOnlyBy5_ShouldReturnBuzz()
+        {
+            //Arrange
+            var fizzBuzz = new FizzBuzz();
+
+            //Act
+            var result = fizzBuzz.CheckNumber(5);
+
+            //Assert
+            Assert.That(result, Is.EqualTo("Buzz"));
+        }
+
+        [Test]
+        public void CheckNumber_WhenInputIsDivisibleBy3And5_ShouldReturnFizzBuzz()
+        {
+            //Arrange
+            var fizzBuzz = new FizzBuzz();
+
+            //Act
+            var result = fizzBuzz.CheckNumber(15);
+
+            //Assert
+            Assert.That(result, Is.EqualTo("FizzBuzz"));
+        }
+
+        [Test]
+        public void GetOutput_WhenInputIsNotDivisibleBy3And5_ShouldReturnInput()
+        {
+            //Arrange
+            var fizzBuzz = new FizzBuzz();
+
+            //Act
+            var result = fizzBuzz.CheckNumber(1);
+
+            //Assert
+            Assert.That(result, Is.EqualTo("1"));
+        }
     }
 }
